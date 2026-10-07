@@ -1,4 +1,5 @@
-﻿const connectDatabase = require("../config/database");
+﻿require("dotenv").config({ path: require("path").resolve(__dirname, "../../.env") });
+const connectDatabase = require("../config/database");
 const Application = require("../models/Application");
 const Program = require("../models/Program");
 const Student = require("../models/Student");
